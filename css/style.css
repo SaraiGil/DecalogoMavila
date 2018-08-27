@@ -94,12 +94,21 @@ a:hover, a:focus {
     color: #6195FF;
 }
 
+.parrafo{
+  font-size: 20px !important;
+}
+
 .main-color {
     color: #6195FF;
 }
 
 .white-text {
     color: #FFF;
+}
+
+.centerText{
+  /* background-color: gray; */
+  margin-left: 20%;
 }
 
 ::-moz-selection {
