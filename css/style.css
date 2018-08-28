@@ -134,8 +134,8 @@ ul, ol {
 }
 
 .md-padding {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .sm-padding {
@@ -186,7 +186,7 @@ ul, ol {
 
 .section-header {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .section-header .title {
@@ -636,8 +636,8 @@ header {
 .about {
     position: relative;
     text-align: center;
-    padding: 40px 20px;
-    border: 1px solid #EEE;
+    padding: 15px 15px;
+    /* border: 1px solid #EEE; */
     margin: 15px 0px;
 }
 
@@ -672,6 +672,8 @@ header {
 .about:hover h3 {
     color: #fff;
 }
+
+
 
 
 /*------------------------------------*\
@@ -732,6 +734,28 @@ header {
 }
 
 .work:hover .work-content h3 {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.work .work-content h4 {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    color: #FFF;
+    margin-bottom: 10px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.work:hover .work-content h4 {
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);
     transform: translateY(0%);

@@ -33,6 +33,16 @@
 		}, 600);
 	});
 
+	// Smooth scroll "Saber Más" button
+	$("#decalogo .about a[href^='#']").on('click', function(e) {
+		e.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 900);
+	});
+
+
 	$('#back-to-top').on('click', function(){
 		$('body,html').animate({
 			scrollTop: 0
