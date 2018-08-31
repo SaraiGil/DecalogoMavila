@@ -28,6 +28,7 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<script type="text/javascript" src="js/actividad.js"></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="index.html">
-							<img class="logo" src="img/logo.png" alt="logo">
+							<img class="logo" src="img/tsd_small_icon.png" alt="logo">
 							<img class="logo-alt" src="img/TSDLogo.jpg" alt="logo">
 						</a>
 					</div>
@@ -432,32 +433,84 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Diagnóstico</h2>
+					<h2 class="title" id="tituloDiagnostico">Diagnóstico</h2>
 				</div>
 				<!-- /Section header -->
 
 				<!-- pricing -->
-				<div >
+				<div>
 					<div class="pricing">
 						<div class="price-head">
-							<span class="price-title">Este es tu diagnóstico</span>
-							<div class="price">
-								<h3>xxx<span class="duration">/ puntaje</span></h3>
-							</div>
+							<span class="price-title">Diagnóstico. Responde lo más honesto posible.</span>
 						</div>
-						<ul class="price-content">
-							<li>
-								<p>Retroalimentacion</p>
-							</li>
-							<li>
-								<p>Retroalimentacion</p>
-							</li>
-							<li>
-								<p>Retroalimentacion</p>
-							</li>
-						</ul>
+							<form>
+								<div id="divResultados">
+									<p id="cerrar" onclick="cerrarResultado()">x</p>
+									<p id="resultado">ERROR</p>
+								</div>
+								<p>Uso una agenda y organizo mis tareas y actividades de acuerdo a su importancia y urgencia</p>
+								Nunca<input type="radio" name="p1" value="1" id="p1a1">
+								Casi Nunca<input type="radio" name="p1" value="2" id="p1a2">
+								A veces<input type="radio" name="p1" value="3" id="p1a3">
+								Casi Siempre<input type="radio" name="p1" value="4" id="p1a4">
+								Siempre<input type="radio" name="p1" value="5" id="p1a5">
+								<p>Limpio mi espacio de trabajo y mi mente regularmente</p>
+								Nunca<input type="radio" name="p2" value="1" id="p2a1">
+								Casi Nunca<input type="radio" name="p2" value="2" id="p2a2">
+								A veces<input type="radio" name="p2" value="3" id="p2a3">
+								Casi Siempre<input type="radio" name="p2" value="4" id="p2a4">
+								Siempre<input type="radio" name="p2" value="5" id="p2a5">
+								<p>Atiendo las juntas y reuniones a la hora exacta a la que se me fue citado</p>
+								Nunca<input type="radio" name="p3" value="1" id="p3a1">
+								Casi Nunca<input type="radio" name="p3" value="2" id="p3a2">
+								A veces<input type="radio" name="p3" value="3" id="p3a3">
+								Casi Siempre<input type="radio" name="p3" value="4" id="p3a4">
+								Siempre<input type="radio" name="p3" value="5" id="p3a5">
+								<p>Suelo comprometerme en actividades o trabajo que entrego en tiempo y forma</p>
+								Nunca<input type="radio" name="p4" value="1" id="p4a1">
+								Casi Nunca<input type="radio" name="p4" value="2" id="p4a2">
+								A veces<input type="radio" name="p4" value="3" id="p4a3">
+								Casi Siempre<input type="radio" name="p4" value="4" id="p4a4">
+								Siempre<input type="radio" name="p4" value="5" id="p4a5">
+								<p>Pienso regularmente en que actividad realizar que me ayude a crecer como persona (profesionalmente, emocionalmente, deportivamente, culturalmente, etc.)</p>
+								Nunca<input type="radio" name="p5" value="1" id="p5a1">
+								Casi Nunca<input type="radio" name="p5" value="2" id="p5a2">
+								A veces<input type="radio" name="p5" value="3" id="p5a3">
+								Casi Siempre<input type="radio" name="p5" value="4" id="p5a4">
+								Siempre<input type="radio" name="p5" value="5" id="p5a5">
+								<p>Tomo la responsabilidad de todas mis acciones, sean exitos o fracasos</p>
+								Nunca<input type="radio" name="p6" value="1" id="p6a1">
+								Casi Nunca<input type="radio" name="p6" value="2" id="p6a2">
+								A veces<input type="radio" name="p6" value="3" id="p6a3">
+								Casi Siempre<input type="radio" name="p6" value="4" id="p6a4">
+								Siempre<input type="radio" name="p6" value="5" id="p6a5">
+								<p>Soy respetuoso con mis compañeros y personas a mi alrededor en todo momento</p>
+								Nunca<input type="radio" name="p7" value="1" id="p7a1">
+								Casi Nunca<input type="radio" name="p7" value="2" id="p7a2">
+								A veces<input type="radio" name="p7" value="3" id="p7a3">
+								Casi Siempre<input type="radio" name="p7" value="4" id="p7a4">
+								Siempre<input type="radio" name="p7" value="5" id="p7a5">
+								<p>Conozco y acato las leyes y normas</p>
+								Nunca<input type="radio" name="p8" value="1" id="p8a1">
+								Casi Nunca<input type="radio" name="p8" value="2" id="p8a2">
+								A veces<input type="radio" name="p8" value="3" id="p8a3">
+								Casi Siempre<input type="radio" name="p8" value="4" id="p8a4">
+								Siempre<input type="radio" name="p8" value="5" id="p8a5">
+								<p>Me gustan y disfruto las actividades y trabajo que realizo</p>
+								Nunca<input type="radio" name="p9" value="1" id="p9a1">
+								Casi Nunca<input type="radio" name="p9" value="2" id="p9a2">
+								A veces<input type="radio" name="p9" value="3" id="p9a3">
+								Casi Siempre<input type="radio" name="p9" value="4" id="p9a4">
+								Siempre<input type="radio" name="p9" value="5" id="p9a5">
+								<p>Ahorro y/o invierto mi dinero</p>
+								Nunca<input type="radio" name="p10" value="1" id="p10a1">
+								Casi Nunca<input type="radio" name="p10" value="2" id="p10a2">
+								A veces<input type="radio" name="p10" value="3" id="p10a3">
+								Casi Siempre<input type="radio" name="p10" value="4" id="p10a4">
+								Siempre<input type="radio" name="p10" value="5" id="p10a5">
+							</form>
 						<div class="price-btn">
-							<button class="outline-btn"><a href="blog-single.html">Hacer el test de nuevo</a></button>
+							<button class="outline-btn" onclick="resultadoDiagnostico()">Ver Resultado</button>
 						</div>
 					</div>
 				</div>
@@ -616,7 +669,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.html"><img src="img/logo-alt.png" alt="logo"></a>
+						<a href="index.html"><img src="img/tsd_small_icon.png" alt="logo"></a>
 					</div>
 					<!-- /footer logo -->
 

@@ -904,7 +904,7 @@ header {
     position: relative;
     text-align: center;
     border: 1px solid #EEE;
-    background-color: #FFF;
+    background-color: #1C1D21;
     z-index: 11;
     margin: 15px 0px;
 }
@@ -1783,4 +1783,84 @@ header {
     -webkit-transform:scale(0);
             transform:scale(0);
   }
+}
+
+form>p
+{
+    margin-bottom: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+input[type="radio"]
+{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    width: 9%;
+}
+
+#divResultados
+{
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: #235CE9;
+    background: rgba(30, 30, 30, 0.8);
+    padding: 5%;
+    display: none;
+}
+
+#cerrar
+{
+    position: absolute;
+    color: #D80000;
+    right: 10%;
+    top: 0;
+    margin-bottom: 10%;
+    margin-left: 80%;
+    font-size: 3em;
+}
+
+table
+{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+td
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+
+#d1r1, #d1r2, #d1r3, #d1r4, #d1r5, #d1r6, #d1r7, #d1r8, #d1r9, #d1r10
+{
+    font-weight: bolder;
+}
+
+tr:nth-child(even)
+{
+    background-color: #dddddd;
+}
+
+#tituloActividad, #instruccionActividad
+{
+    text-align: center;
+}
+
+.activity-result-btn
+{
+    position: relative;
+    bottom: -50px;
+    left: 43%;
+    align-items: center;
 }
